@@ -1,22 +1,27 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta charset="UTF-8">
+  <title>Homework7-8</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Homework7-8</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <!--<link rel="stylesheet" href="css/normalize.css">-->
+    <!--[if lt IE 9]><link href="css/ie8.css" rel="stylesheet" type="text/css"/><![endif]-->
+  <script src="js/css3-mediaqueries.js"></script>
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
 </head>
 <body>
-  <header class="header">
-    <div class="wrapper">
-     <strong class="logo"><a href="#"></a></strong>
+  <header>
+    <div class="wrapper_main">
+     <div class="logo col-lg-4 col-sm-12 col-xs-12"><img src="img/logo.png" alt=""></div>
      <div class="nav-bar-top">
-        <div class="nav-home">
-          <a href="#" class="nav-home__link">Home</a>
-        </div>
-        <ul class="nav-bar nav-bar__mobile">
-          <li class="nav-bar__item"><a href="#" class="nav-bar__link">Home</a></li>
+        <ul class="nav-bar col-lg-8">
+          <li class="nav-bar__item nav-bar__item_home"><a href="#" class="nav-bar__link nav-bar__link_home">Home</a></li>
           <li class="nav-bar__item"><a href="#" class="nav-bar__link">About</a></li>
           <li class="nav-bar__item"><a href="#" class="nav-bar__link">Blog</a></li>
           <li class="nav-bar__item"><a href="#" class="nav-bar__link">Products</a></li>
@@ -25,66 +30,57 @@
         </ul>
      </div>
     </div>
-  </header>
-  <div class="carousel carousel__topping">
-    <div class='arrows'>
-      <div class="wrapper">
-        <div class="carousel__top clearfix">
-          <div class="carousel__item">
-            <h1 class="carousel__text1">Lorem Ipsum Dolor</h1>
-            <h3 class="carousel__text2">IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</h3>
-            <p class="carousel__text3">Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper.In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu et felis aliquam a tempus lectus lobortis.</p>
-          </div>
-            <img src="img/iphone.png" alt="Iphone" class="carousel__img">
-            <img src="img/iphonebig.png" alt="iphone" class="carousel__img__big">
+    <div class="slider">
+      <div class="wrapper-slider">
+        <div class="slider__item col-lg-7 col-md-5 col-sm-6 col-xs-12">
+          <h1 class="slider_text1">Lorem Ipsum Dolor</h1>
+          <p class="slider__text2">IT WILL MAKE ALL OF YOUR DREAMS COME <span class="hidden-md hidden-sm hidden-xs">TRUE</span></p>
+          <p class="slider__text3 visible-lg visible-md">Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est <span class="hidden-md hidden-sm hidden-xs"> at volutpat. Morbi elementum euismod lacus id semper.In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu et felis aliquam a tempus lectus lobortis.</span></p>
         </div>
-        <ul class="carousel__buttons">
+        <div class="col-lg-5 col-md-5 col-sm-6">
+          <img src="img/iphone.png" alt="Iphone" class="slider__img visible-sm">
+          <img src="img/iphonebig.png" alt="iphone" class="slider__img visible-lg visible-md">
+        </div>
+        <ul class="slider__buttons">
           <li></li>
           <li class="current"></li>
           <li></li>
           <li></li>
         </ul>
+        <div class='arrows'>
+          <a href="" class="slider__button slider__button--left"></a>
+          <a href="" class="slider__button slider__button--right"></a>
+        </div>
       </div>
-        <a href="" class="carousel__button carousel__button--left"></a>
-        <a href="" class="carousel__button carousel__button--right"></a>
     </div>
-  </div>
-
+</header>
   <section class="about-section">
-    <div class="wrapper">
-      <div class="about_all">
-        <div class="about about__settings clearfix">
-          <div class="about-inner">
-            <h3 class="about__title">About our company</h3>
-            <p class="about__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</p>
-            <a href="#" class="about__link">Read more</a>
-          </div>
-        </div>
-        <div class="about about__blabla clearfix">
-          <div class="about-inner">
-            <h3 class="about__title">About our company</h3>
-            <p class="about__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</p>
-            <a href="#" class="about__link">Read more</a>
-          </div>
-        </div>
-        <div class="about about__music clearfix">
-          <div class="about-inner">
-            <h3 class="about__title">About our company</h3>
-            <p class="about__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl. Quisque libero tellus, pharetra et eleifend id, interdum elementum arcu. Suspendisse quis mauris non ligula rutrum faucibus eu quis odio. Phasellus eu lobortis odio. In hac habitasse platea dictumst. Proin vestibulum turpis at mauris aliquam non euismod lorem euismod. Aenean dapibus ultricies enim, eget vulputate leo feugiat non.</p>
-            <a href="#" class="about__link">Read more</a>
-          </div>
-        </div>
+    <div class="about_all">
+      <div class="about-inner col-lg-4 col-md-4 col-sm-11">
+        <h3 class="about__title">About our company</h3>
+        <p class="about__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus <span class="hidden-xs"> ultrices posuere. Pellentesque vel lacus <span class="hidden-md"> eget nisi convallis auctor. Nam </span></span></p>
+        <a href="#" class="about__link">Read more</a>
+      </div>
+      <div class="about-inner col-lg-4 col-md-4 col-sm-11">
+        <h3 class="about__title about__title_second">About our company</h3>
+        <p class="about__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus <span class="hidden-xs"> ultrices posuere. Pellentesque vel lacus <span class="hidden-md"> eget nisi convallis auctor. Nam </span></span></p>
+        <a href="#" class="about__link">Read more</a>
+      </div>
+      <div class="about-inner col-lg-4 col-md-4 col-sm-11">
+        <h3 class="about__title about__title_third">About our company</h3>
+        <p class="about__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus <span class="hidden-xs"> ultrices posuere. Pellentesque vel lacus <span class="hidden-md"> eget nisi convallis auctor. Nam </span></span></p>
+        <a href="#" class="about__link">Read more</a>
       </div>
     </div>
   </section>
 
   <section class="white">
-    <div class="wrapper">
-      <div class="carousel carousel__bottom">
+    <div class="wrapper-updates">
+      <div class="carousel__bottom col-lg-6 col-md-6">
         <div class="carousel__item">
           <img src="img/man.png" class="carousel__image" alt="">
           <h3 class="carousel__title">Pingbuller <span>starts here</span></h3>
-          <p class="carousel__text">“Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”</p>
+          <p class="carousel__text">“Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae<span class="hidden-xs"> lectus eu libero pellentesque pulvinar<span class="hidden-md"> urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”</span></span></p>
         </div>
         <ul class="carousel__buttons">
           <li></li>
@@ -93,31 +89,31 @@
           <li></li>
         </ul>
       </div>
-      <div class="updates clearfix">
+      <div class="updates col-lg-6 col-md-6">
         <h3 class="updates__title">Recent updates</h3>
-        <div class="updates__item clearfix">
+        <div class="updates__item">
           <img src="img/pic1.png" alt="" class="updates__image">
-          <h4 class="updates__subtitle">Nunc turpis neque feugiat eget</h4>
-          <p class="updates__info">Posted by Admin on March 13<span class="updates__2012"> &nbsp;2012 in Recent News</span></p>
+          <h4 class="updates__subtitle">Nunc turpis neque <span class="hidden-xs"> feugiat eget </span></h4>
+          <p class="updates__info">Posted by Admin on March 13<span class="hidden-xs"> 2012</span><span class="hidden-md hidden-sm hidden-xs"> in Recent News</span></p>
         </div>
-        <div class="updates__item clearfix">
+        <div class="updates__item">
           <img src="img/pic2.png" alt="" class="updates__image">
-          <h4 class="updates__subtitle">Nunc turpis neque feugiat eget</h4>
-          <p class="updates__info">Posted by Admin on March 13<span class="updates__2012">&nbsp;2012 in Category</span></p>
+          <h4 class="updates__subtitle">Nunc turpis neque <span class="hidden-xs"> feugiat eget</h4>
+          <p class="updates__info">Posted by Admin on March 13<span class="hidden-xs"> 2012</span><span class="hidden-md hidden-sm hidden-xs"> in Category</span></p>
         </div>
-        <div class="updates__item clearfix">
+        <div class="updates__item">
           <img src="img/pic3.png" alt="" class="updates__image">
-          <h4 class="updates__subtitle">Nunc turpis neque feugiat eget</h4>
-          <p class="updates__info">Posted by Admin on March 13<span class="updates__2012">&nbsp;2012 in Blog Updates</span></p>
+          <h4 class="updates__subtitle">Nunc turpis neque <span class="hidden-xs"> feugiat eget</h4>
+          <p class="updates__info">Posted by Admin on March 13<span class="hidden-xs"> 2012</span><span class="hidden-md hidden-sm hidden-xs"> in Block Updates</span></p>
         </div>
-          <a href="#" class="updates__link">READ MORE HERE</a>
+        <a href="#" class="updates__link">READ MORE HERE</a>
       </div>
     </div>
   </section>
 
   <section class="partners">
-    <div class="wrapper clearfix">
-      <div class="partners__partners1 clearfix">
+    <div class="wrapper_partners">
+      <div class="partners__main col-lg-12 col-md-12">
         <a href="" class="partners__item"><img src="img/box1.png" alt=""></a>
         <a href="" class="partners__item"><img src="img/box2.png" alt=""></a>
         <a href="" class="partners__item"><img src="img/box3.png" alt=""></a>
@@ -128,18 +124,18 @@
     </div>
   </section>
 
-  <section class="bfrfooter">
-    <div class="wrapper">
-      <div class="category">
-        <h1 class="category__title_main">PIGBULL <span class="category_title_color">er</span></h1>
-        <p class="category__copyright">Copyright 2013, Pingbull AS</p>
-        <p class="category__text_main">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pul-</p>
+  <section class="bfrfooter hidden-xs">
+    <div class="wrapper_bfrfooter">
+      <div class="category col-lg-4 col-md-4">
+        <h2 class="category__main_title">PIGBULL <span class="category_title_color">er</span></h2>
+        <h4 class="category__main_copyright">Copyright 2013, Pingbull AS</h4>
+        <p class="category__main_text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pul-</p>
       </div>
-      <div class="category">
+      <div class="category col-lg-4 col-md-4">
         <h3 class="category__title">RECENT COMMENTS</h3>
         <p class="category__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis</p>
       </div>
-      <div class="category">
+      <div class="category col-lg-4 col-md-4">
         <h3 class="category__title">NEWS CATEGORIES</h3>
         <p class="category__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis</p>
       </div>
@@ -147,16 +143,16 @@
   </section>
 
   <section class="footer">
-    <div class="wrapper">
-      <ul class="nav-bar nav-bar__footer clearfix">
-        <li class="nav-bar__item"><a href="#" class="nav-bar__link">Home</a></li>
-        <li class="nav-bar__item"><a href="#" class="nav-bar__link">About</a></li>
-        <li class="nav-bar__item"><a href="#" class="nav-bar__link">Blog</a></li>
-        <li class="nav-bar__item"><a href="#" class="nav-bar__link">Products</a></li>
-        <li class="nav-bar__item"><a href="#" class="nav-bar__link">Lorem Ipsum</a></li>
-        <li class="nav-bar__item"><a href="#" class="nav-bar__link">Dolor Sit Amet</a></li>
+    <div class="footer_wrapper">
+      <ul class=" nav-bar__footer col-lg-9 col-md-12 hidden-xs">
+        <li class="nav-bar__item1"><a href="#" class="nav-bar__link1">Home</a></li>
+        <li class="nav-bar__item1"><a href="#" class="nav-bar__link1">About</a></li>
+        <li class="nav-bar__item1"><a href="#" class="nav-bar__link1">Blog</a></li>
+        <li class="nav-bar__item1"><a href="#" class="nav-bar__link1">Products</a></li>
+        <li class="nav-bar__item1"><a href="#" class="nav-bar__link1">Lorem Ipsum</a></li>
+        <li class="nav-bar__item1"><a href="#" class="nav-bar__link1">Dolor Sit Amet</a></li>
       </ul>
-      <p class="copy">Designed by <a href="#" class="copy__link">Pingbull AS</a></p>
+      <p class="copy col-lg-3 col-md-12">Designed by <span>Pingbull AS</span></p>
     </div>
   </section>
 </body>
