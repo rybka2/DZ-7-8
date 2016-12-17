@@ -71,6 +71,9 @@ header {
   padding: 0;
 }
 
+.logo{
+  margin-top: -17px;
+}
 .nav-bar-top {
   position: relative;
 }
@@ -1081,107 +1084,3 @@ header {
     text-align: right;
   }
 }
-@media (max-width: 960px) {
-  header {
-    height: 800px;
-  }
-
-  .logo,
-  .nav-bar {
-    padding-left: 9px;
-  }
-
-  .nav-bar__item {
-    margin: 33px 0px 0px 45px;
-  }
-
-  .nav-bar__item:first-child {
-    margin-left: 0px;
-  }
-
-  .slider__item {
-    margin-top: 62px;
-    padding-left: 64px;
-  }
-
-  .slider_text1 {
-    font-size: 48px;
-  }
-
-  .slider__text2 {
-    font-size: 24px;
-    line-height: 1.6;
-  }
-
-  .slider__text3 {
-    font-size: 16px;
-    line-height: 1.6;
-  }
-
-  .slider__img {
-    margin: -58px 0px 0px 43px;
-  }
-
-  .slider__button--left {
-    left: 0px;
-    margin: -15px auto;
-  }
-
-  .slider__button--right {
-    right: 0px;
-    margin: -15px auto;
-    background-position: -31px  0;
-  }
-
-  .slider__buttons {
-    position: absolute;
-    bottom: 35px;
-    margin-left: 73%;
-    text-align: center;
-    list-style: none;
-  }
-
-  .about-inner,
-  .about-inner:nth-child(2),
-  .about-inner:nth-child(3) {
-    padding-left: 81px;
-  }
-
-  .about__title {
-    margin-bottom: 0px;
-    font-size: 24px;
-  }
-
-  .about__text {
-    margin-bottom: 5px;
-  }
-
-  .about__link {
-    margin-left: 165px;
-  }
-
-  .carousel__item {
-    width: 430px;
-  }
-
-  .carousel__item:after {
-    display: none;
-  }
-
-  .updates {
-      padding: 33px 0px 0 0px;
-  }
-  .updates__link {
-    margin-left: 76%;
-  }
-  .partners__item {
-    margin: 0px 2.9%;
-  }
-
-  .footer {
-    height: 202px;
-  }
-
-  .copy {
-    text-align: right;
-  }
